@@ -1,0 +1,335 @@
+/*------------------Section Image------------------*/
+.image {
+    height: 93vh;
+    background-image: url('../Image/Code.jpg'); /* Remplace par le chemin de ton image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: center;
+    width: 99vw;
+}
+
+.overlay {
+    background: rgba(216, 215, 215, 0.2); /*Opacité 0.2*/
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    max-width: 90%;
+    box-sizing: border-box;
+}
+
+/*------------------START DIV------------------*/
+/*------------------Presentation/Technologie maitrîsées------------------*/
+#name{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#presentation {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.pres_bts{
+    text-align: left;
+    margin: 1%;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.tm{
+    background-color: gray;
+    border-radius: 10px;
+    margin: 1%
+}
+
+.tm ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.tm ul li {
+    padding: 10px;
+    margin-left: 160px;
+    display: inline-block;
+}
+
+.tm ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.name {
+    flex: 1;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.tm img {
+    height: 5vw;
+    width: 5vw;
+    margin-top: 10px;
+    object-fit: contain;
+    border: none;
+}
+
+/*------------------parcours scolaire------------------*/
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #fffdfd;
+}
+
+#row {
+    display: flex;
+    justify-content: space-between; /* Espace entre les divs */
+    width: 100%;
+    margin: 10px;
+}
+
+#avant{
+    color: white;
+    height: 200px;
+    width: 49%;
+    background-color: #888887;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#après{
+    color: white;
+    height: 200px;
+    width: 49%;
+    background-color: #878888;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+/* Style des textes */
+#left{
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 16%;
+}
+
+#right{
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 17.5%;
+}
+
+#left1{
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 17.5%;
+}
+
+#right1{
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 17.5%;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+  
+
+.hover-box{
+    position: absolute;
+    width: 325px;
+    background-color: #867feb;
+    border-radius: 40px;
+    color: #333;
+    opacity: 1;
+}
+
+/* Positionnement des div */
+#box-left, #box-left1 {
+    top: 60px;
+    left: 5%;
+}
+
+#box-right, #box-right1 {
+    top: 60px;
+    right: 5%;
+}
+
+/*------------------Compétence------------------*/
+#competence, #cv {
+    background-color: #747474;
+    width: 25%;
+    margin: 0.5% 12%; 
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#container-bottom {
+    text-align: center;
+    margin-top: 0.3%;
+}
+
+#a_fichier{
+    color: black;
+    text-decoration: none;
+}
+
+#a_fichier:hover{
+    color: rgb(255, 255, 255);
+}
+
+/*------------------Média------------------
+/* Tablette */
+@media screen and (max-width: 1024px){
+    .image{
+        width: 100vw;
+        margin-top: 50px;
+    }
+
+    /*Technologie Maîtrisées*/
+    .tm ul li a{
+        color: white;
+        font-weight: bold;
+        margin-left: 10vw;
+        text-decoration: none;
+    }
+
+    .tm ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    .tm ul li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        margin: 0;
+        border-bottom: 1px solid white;
+    }
+
+    .name {
+        flex: 1;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+    }
+
+    .icon-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tm img {
+        height: 50px;
+        width: 50px;
+        object-fit: contain;
+    }
+
+    /*Parcours scolaire*/
+    #row{
+        flex-direction: column; /*Mise en page verticale des blocs*/
+        align-items: center;
+    }
+    
+    #avant, #après{
+        width: 90%;
+        height: auto;
+        margin: 5px;
+    }
+    
+    #left, #right, #left1, #right1{
+        font-size: 1rem;
+        position: static;
+        text-align: center;
+    }
+
+    #left, #left1{
+        left: 0%;
+    }
+  
+    .hover-box{
+        position: relative;
+        width: 90%;
+        height: auto;
+        margin: 5px 0;
+        padding: 10px;
+        box-sizing: border-box; /*Prend en compte le padding et les border des box*/
+        opacity: 1;
+    }
+
+    #box-left, #box-left1, #box-right, #box-right1{
+        top: 0px;
+        left: 0px;
+    }
+
+    /*compétence*/
+    #competence, #cv {
+        background-color: #747474;
+        width: 45%;
+        margin: 0.5% 1%; 
+        border-radius: 10px;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    /* Téléphone */
+    @media screen and (max-width: 767px){
+
+        #name{
+            font-size: 2rem;
+        }
+
+        #avant, #après{
+          width: 100%;
+          margin: 5px 0;
+        }
+      
+        .hover-box{
+          font-size: 0.9rem;
+          padding: 5px;
+        }
+      
+        #left, #right, #left1, #right1{
+          font-size: 0.9rem;
+        }
+        
+        #competence, #cv {
+            background-color: #747474;
+            width: 80%;
+            border-radius: 10px;
+            text-align: center;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+}

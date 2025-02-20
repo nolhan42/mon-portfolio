@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Stage2</title>
+        <meta http-equiv="refresh" content="300">
+        <link rel="stylesheet" href="../../../CSS/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../../../CSS/realisationstyle.css" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="rea">
+        
+        <!-- Barre de navigation en haut -->
+        <header id="header">
+            <nav id="nav">
+                <ul>
+                    <li class="nav_li"><a class="rea" id="a_h" href="../../realisation.html">Go back</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="title">
+            <h1 id="title_realisations">Stage 2ème : Chez Elixir Création</h1>
+        </div>
+
+        <div class="stage1">
+            <!--Intro-->
+            <div class="div_rea">
+                <div id="rea_intro">
+                    <h2>Présentation de l'entreprise</h2>
+
+                    <p id="p_reatexte">Elixir Création est une agence web qui créer et héberge des sites vitrine ou e-commerce.</p>
+                    <img class="hidden" id="img_hidden" src="../../../Image/stage2-logo.jpg"/>
+                </div>
+
+                <div id="stage_imageintro">
+                    <img id="img_Nohidden_x" src="../../../Image/stage2-logo.jpg" onclick="openImage('../../../Image/stage2-logo.jpg')"/>
+                </div>
+            </div>
+        
+            <!--Développement-->
+            <div class="div_rea_x">
+                <div id="rea_intro_x">
+                    <h2>Développement :</h2>
+                    
+                    <div>
+                        <p class="p_lefttexte">Travaux Réalisé :</p>
+                        <br>
+                        <ul class="ul_tr">
+                            <li>Création de site internet via WordPress</li>
+                            <li>Réparer de problème entre les plugins</li>
+                            <li>Copie/modification de sites  internet hébergé</li>
+                        </ul>
+                    </div>
+                    <br>
+                </div>
+
+                <!--Choix Mission-->
+                <button id="left_arrow_s" class="arrow" onclick="switchmission2(-1)"></button> <!-- Flèche gauche -->
+
+                <div class="arrow_responsive">
+                    <div id="column_arrow">
+                        <button  class="hidden" id="left_arrow_x" onclick="switchmission2(-1)"></button> <!-- Pour le responsive -->
+                        <button  class="hidden" id="right_arrow_x" onclick="switchmission2(1)"></button> <!-- Pour le responsive -->
+                    </div>
+                </div>
+
+                <div id="rea_dvp_x">
+                    <!--Mission1-->
+                    <div class="hidden" id="s2_Mission1">
+                        <p class="p_mtexte">Mission 1: Migration de sites sur un autre serveur (o2Switch)</p>
+
+                        <p id="p_stagetexte">Il a fallu tout d'abord créer des catégories pour ranger les sites web.</p>
+                        <img class="img_s_r" src="../../../Image/Tâche2_1.jpg"/>
+                        <p id="p_stagetexte">Ensuite, il m'a fallu référencer le nom de domaine dans le serveur, pour la redirection.</p>
+                        <img class="img_s_r" src="../../../Image/Tâche2_2.jpg"/>
+                        <p id="p_stagetexte">Enfin, une fois la redirection terminée, j'ai crée le WordPress pour chacun des sites web.</p>
+                        <img class="img_s_r" src="../../../Image/Tâche2_3.jpg"/>
+                    </div>
+
+                    <!--Mission2-->
+                    <div class="hidden" id="s2_Mission2">
+                        <img class="img_s_r" src="../../../Image/duplicator-logo.png"/>
+                        <p class="p_mtexte">Mission 2: Utilisation d'un plugin de copie de site</p>
+
+                        <p id="p_stagetexte">Utilisation d'un plugin appelé "Duplicator".</p>
+                        <p id="p_stagetexte">Ce plugin permet de copier un site web, pour le coller sur une autre adresse URL.</p>
+                        <p id="p_stagetexte">Avec ce plugin, il m'a fallu copier un site internet afin de l'utiliser comme modèle pour la construction d'un autre.</p>
+                    </div>
+
+                    <!--Mission3-->
+                    <div class="hidden" id="s2_Mission3">
+                        <img class="img_s_r" src="../../../Image/stage2-img2.jpg"/>
+                        <p class="p_mtexte">Mission 3: Devoir réalisé/créer des sites en fonction de cahier des charges/maquettes</p>
+
+                        <p id="p_stagetexte">Il fallait pour commencer créer un WordPress de production pour le site.</p>
+                        <p id="p_stagetexte">Une fois équipé des maquettes/cahier des charges requis, le travail pouvais commencer.</p>
+                        <p id="p_stagetexte">Note : Il se pouvait que nous ayons à faire des entretiens avec les clients pour discuter de changements, ou de l'avancement du projet.</p>
+                        <p id="p_stagetexte">Nous avons souvent adopté la même logique, c'est-à-dire, création de toutes les pages en premier, puis on commençait le contenu des pages prioritaires (accueil, contact..) (image1 et image2).</p>
+                        <img class="img_s_r" src="../../../Image/stage2-img1.jpg"/>
+                        <img class="img_s_r" src="../../../Image/stage2-img2.jpg"/>
+                    </div>
+                </div>
+
+                <button id="right_arrow_s" class="arrow" onclick="switchmission2(1)"></button> <!-- Flèche droite -->
+            </div>
+
+            <!--Bilan-->
+            <div class="div_rea">
+                <div id="stage_bilan">
+                    <h2>Bilan :</h2>
+                    
+                    <div>
+                        <p>Compétence acquise :</p>
+
+                        <ul class="ul_bilan">
+                            <li>Savoir suivre une maquette, un plan</li>
+                            <li>Savoir comprendre les attentes des clients</li>
+                            <li>Savoir s'adapter en fonction des demandes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Affichage Image preview-->
+            <div id="imageAffichage" class="affichage" onclick="closeImage()">
+                <span class="close">&times;</span>
+                <img class="affichage-content" id="affichageImage">
+            </div>
+            </div>
+        </div>
+        
+        <script src="../../../JS/interaction.js"></script>
+    </body>
+    <footer>
+        <div class="f">
+            <div id="f_left">
+                <h1 id="pfootertitre">Me contacter :</h1></li>
+                <p id="pfooter">Email: <a class="a1" id="a_h" href="mailto:nolhan.gf42@gmail.com">nolhan.gf42@gmail.com</a></p>
+                <p id="pfooter">Téléphone : 06 27 24 78 41</p>
+            </div>
+            <div id="f_right">
+                <h1 id="pfootertitre2">Lien :</h1>
+                <p id="pfooter">Linkedin : <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+                <script type="IN/Share" data-url="https://www.linkedin.com/in/nolhan-gachon-flores-6968bb28b/"></script></p>
+            </div>
+        </div>
+    </footer>
+</html>

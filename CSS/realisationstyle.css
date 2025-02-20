@@ -1,0 +1,481 @@
+/*------------------Réalisation------------------*/
+#title_rea {
+    margin-top: 70px;
+    text-align: center;
+    height: 300px;
+    background-color: rgb(218, 215, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title2_rea {
+    opacity: 0.75;
+    background-color: rgb(169, 168, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+    border-radius: 15px;
+}
+
+#realisation{
+    background-color: rgb(77, 77, 77);
+    border-radius: 10px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 5%; /* Espacement entre les boutons */
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px; /* Espacement entre les boutons */
+    width: 100%;
+}
+  
+.button:hover {
+    background-color: #747474;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #72c0f3;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    height: 100%;
+    width: 45%;
+    margin: 10px 0% 0% 2.5%;
+}
+
+#selection{
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#container_projet {
+    position: relative;
+    margin: 0% 0% 70px 1%;
+    padding: 20px;
+    width: 98%;
+    height: 550px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #818181;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#Scolaire, #Stage {
+    position: absolute; /*position relative par rapport au conteneur parent*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container2 {
+    background-color: rgb(83, 83, 83);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80vw;
+    margin-top: 100px;
+}
+
+
+.arrow, #right_arrow_x, #left_arrow_x{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.div_contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*------------------Arrow------------------*/
+#left_arrow, #left_arrow_s, #left_arrow_x{
+    height: 60px;
+    width: 60px;
+    margin: 9% 1% 0% 0%;
+    background-image: url("../Image/Arrow_left.png");
+    background-size: cover;
+}
+
+#right_arrow, #right_arrow_s, #right_arrow_x{
+    height: 60px;
+    width: 60px;
+    margin: 9% 0% 0% 1%;
+    background-image: url("../Image/Arrow_right.png");
+    background-size: cover;
+}
+
+/*------------------Réalisation------------------*/
+/*------------------Mise en Page------------------*/
+.div_rea, .div_rea_x{
+    background-color: #152129; 
+}
+
+
+#rea_intro, #rea_intro_x, #rea_dvp, #rea_bilan{
+    width: 47.5%;
+    margin-left: 1.25%;
+    flex-direction: column;
+    display: block;
+    flex: 1;
+}
+
+#rea_dvp_x{
+    width: 60%;
+    margin: 0% 5% 0% 1%;
+}
+
+#rea_intro ul li{
+    list-style-type: none;
+    color: white;
+    font-size: 20px;
+}
+
+.title{
+    background-color: #72c0f3;
+    border-radius: 10px;
+    width: 60%;
+    margin: 100px 0% 0% 20%;
+    text-align: center;
+    padding: 0.25%;
+}
+
+#imagedvp{
+    max-height: 600px;
+    width: 40.5%;
+    margin: 0% 0% 0% 1.25%;
+    overflow-y: scroll;
+}
+
+.ul_bilan, .ul_tr{
+    list-style-type: none;
+    color: white;
+    font-size: 20px;
+    margin: 0% 0% 5px 5px
+}
+/*------------------Texte------------------*/
+#p_reatexte_pf{
+    font-style: bold;
+    font-size: 25px;
+    text-align: left;
+}
+
+.p_mtexte{
+    text-align: left;
+    font-weight: bold;
+}
+/*------------------img------------------*/
+.img_s, .img_s_r{
+    width: 750px;
+    height: 300px;
+    margin: 30px;
+}
+
+.img_sx{
+    width: auto;
+    height: 300px;
+    margin: 30px 15% 0% 15%;
+}
+
+#Scolaire img {
+    transition: transform 0.3s ease, border 0.3s ease;
+    border: 5px solid white; /* Ajouter une bordure blanche autour de l'image */
+    border-radius: 10px;
+}
+
+#Scolaire img:hover {
+    transform: scale(1.1); /* Agrandir l'image à 110% de sa taille */
+    border: 5px solid rgb(116, 128, 236); /* Ajouter une bordure blanche autour de l'image */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#img_Nohidden{
+    width: 80%;
+    height: 40%;
+    margin-left: 10%;
+}
+
+#img_Nohidden_x{
+    width: 80%;
+    height: 80%;
+    margin: 1% 0 0 10%;
+}
+
+.img_rea_x{
+    width: 60%;
+    height: 50%;
+    margin-left: 25%;
+}
+
+/*------------------------------------*/
+[id^="s1_Mission"], [id^="s2_Mission"]{ /*id^= permet de sélectionner tout les id qui commencent par ce qui suis (ici s2_Mission)*/
+    overflow-y: scroll;
+    height: 400px;
+}
+/*------------------Affichage_Image preview écran------------------*/
+.affichage {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 2%;
+    width: 90%;
+    height: 90%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/*Bouton pour fermer*/ 
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*Image*/
+.affichage-content {
+    margin: 7% 20% 7% 20%;
+    display: block;
+    width: 60%;
+    height: auto;
+    animation: zoom;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.7);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/*------------------Paragraph------------------*/
+#selection_p{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#WIP{
+    width: 6%;
+    animation: color-change 10s infinite; /*Durée + répétition*/
+}
+
+
+@keyframes color-change { /*Change la couleur du texte (total duration : 10s) --> regarder ligne 186*/
+    0%, 100% { color: red; }
+    10% { color: rgb(255, 83, 83); }
+    20% { color: rgb(255, 165, 165); }
+    30% { color: rgb(183, 196, 255); }
+    40% { color: rgb(101, 101, 253); }
+    50% { color: blue; }
+    60% { color: rgb(101, 101, 253); }
+    70% { color: rgb(183, 196, 255); }
+    80% { color: rgb(255, 165, 165); }
+    90% { color: rgb(255, 83, 83); }
+}
+
+/*------------------h{x}------------------*/
+#title_realisations{
+    font-size: 35px;
+    color: white;
+}
+
+/*------------------Media------------------*/
+@media screen and (max-width: 1024px){
+
+    .div_rea{
+        overflow-y: scroll;
+    }
+
+    .div_rea_x{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #rea_dvp_x, #rea_intro_x{
+        display: block;
+        width: 100%;
+    }
+
+    .title{
+        width: 75%;
+        margin: 72px 0% 5px 12.5vw;
+    }
+
+    #container_projet{
+        height: 350px;
+    }
+
+    /*------------------Stage/Scolaire------------------*/
+    #Stage, #Scolaire{
+        height: 200px;
+        width: 90%;
+        margin: 12% 0 0 5%;
+    }
+
+    .navigation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .div_contenu{
+        margin-bottom: 5%;
+        width: 70vw;
+    }
+
+    #div_oid{
+        width: auto;
+    }
+
+    .arrow_responsive{
+        display: flex;
+        margin-left: 40%;
+        width: 100px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #column_arrow{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+    }
+
+    #left_arrow, #left_arrow_x, #left_arrow_s, #right_arrow, #right_arrow_x, #right_arrow_s{
+        height: 40px;
+        width: 40px;
+        margin: auto;
+    }
+
+    #left_arrow_s, #right_arrow_s{
+        margin-top: 0;
+    }
+
+    #left_arrow, #right_arrow{
+        margin-top: 21.5%;
+    }
+
+    #left_arrow_x, #right_arrow_x{
+        position: relative;
+        margin-bottom: 10%;
+    }
+
+    .img_s{
+        width: 100%;
+        height: 20vw;
+        margin: 30px 0 0 0;
+    }
+
+    .img_sx{
+        width: 100%;
+        height: 20vw;
+        margin: 30px 0 0 0;
+    }
+
+    .img_s_r{
+        width: 500px;
+        height: 30vw;
+        margin: 30px 0 0 15%;
+    }
+
+    #imagedvp{
+        width: 0%;
+    }
+
+    #img_hidden, .img_rea_x{
+        width: 100%;
+        height: auto;
+    }
+    
+    .img_rea_x{
+        margin-left: 0;
+    }
+
+    .img_oid_x{
+        margin-left: 0%;
+    }
+
+    #stage_imageintro{
+        display: none;
+    }
+
+    .affichage-content {
+        width: 95%;
+        max-height: 85%;
+    }
+
+    #title_realisations{
+        font-size: 25px;
+    }
+
+    @media screen and (max-width: 767px){
+        #container_projet {
+            height: 300px;
+        }
+
+        /*------------------Stage/Scolaire------------------*/
+        #Stage, #Scolaire{
+            height: 200px;
+            width: 90%;
+            margin: 25% 0 0 5%;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            margin-top: 25px;
+        }
+
+        .div_contenu{
+            margin-bottom: 5%;
+            width: 70vw;
+        }
+        /* ------------------img------------------*/
+        .img_s_r{
+            width: 85vw;
+            height: 50vw;
+            margin: 30px 0 0 0;
+        }
+    }
+}

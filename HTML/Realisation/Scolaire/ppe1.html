@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>PPE1</title>
+        <meta http-equiv="refresh" content="300">
+        <link rel="stylesheet" href="../../../CSS/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../../../CSS/realisationstyle.css" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body class="rea">
+        
+        <!-- Barre de navigation en haut -->
+        <header id="header">
+            <nav id="nav">
+                <ul>
+                    <li class="nav_li"><a class="rea" id="a_h" href="../../realisation.html">Go back</a></li>
+                </ul>
+            </nav>
+        </header> 
+        
+        <div class="title">
+            <h1 id="title_realisations">Réalisation 2 : Projet de PPE (Puiss4nce)</h1>
+        </div>
+        
+        <div class="ppe1">
+            <!--Intro-->
+            <div class="div_rea">
+                <div id="rea_intro">
+                    <h2>Introduction :</h2>
+
+                    <p id="p_reatexte">Il fallait choisir un projet à réaliser au cours de l'année durant certaine heure de cours dédié, et à la maison si on le souhaitait.</p>
+
+                    <h2>Technologie utilisées :</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <!--Développement-->
+            <div class="div_rea">
+                <div id="rea_dvp">
+                    <h2>Développement :</h2>
+
+                    <div>
+                        <p>Mission : Réalisation du projet (Puiss4nce)</p>
+
+                        <p id="p_reatexte">Pour commencer il m'a fallu trouver une idée assez intéressante et sympa à réaliser. J'ai donc chercher jusqu'a vouloir réalisé un puissance 4 version web</p>
+                        <p id="p_reatexte">Première étape, effectuer un document présentant le projet (image1)</p>
+                        <img class="hidden" id="img_hidden" src="../../../Image/PPE1_3.jpg"/> 
+                        <p id="p_reatexte">Une fois le document réalisé, j'ai pu commencé le développement, en mettant à jour continuellement le document de présentation.</p>
+                        <p id="p_reatexte">Pour commencer, il me fallait une page d'accueil comportant un button jouer (image2).</p>
+                        <img class="hidden" id="img_hidden" src="../../../Image/PPE1_1.jpg"/> <!--Apparait sur des écran large (1024px ou -)-->
+                        <p id="p_reatexte">Ensuite, j'ai du coder avec du PHP et du JS un système pour mettre 2 joueur (vimage3).</p>
+                        <img class="hidden" id="img_hidden" src="../../../Image/PPE1_2.jpg"/> <!--Apparait sur des écran large (1024px ou -)-->
+                        <p id="p_reatexte">Enfin, j'ai dû faire la partie de jeu (avec grille). Quelques tentative on été faite au niveau des animations, sans résultat concret.</p>
+                        
+                        <!--Image-->
+                        <br>
+                        <p id="p_reatexte_pf">Présentation finale :</p>
+                        <img class="img_rea_x" src="../../../Image/PPE1.jpg" onclick="openImage('../../../Image/PPE1.jpg')"/>
+
+                        <div id="imageAffichage" class="affichage" onclick="closeImage()">
+                            <span class="close">&times;</span>
+                            <img class="affichage-content" id="affichageImage">
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="imagedvp">
+                    <img id="img_Nohidden" src="../../../Image/PPE1_3.jpg" onclick="openImage('../../../Image/PPE1_3.jpg')"/>
+                    <img id="img_Nohidden" src="../../../Image/PPE1_1.jpg" onclick="openImage('../../../Image/PPE1_1.jpg')"/>
+                    <img id="img_Nohidden" src="../../../Image/PPE1_2.jpg" onclick="openImage('../../../Image/PPE1_2.jpg')"/>
+                </div>
+            </div>
+        
+            <!--Bilan-->
+            <div class="div_rea">
+                <div id="rea_bilan">
+                    <h2>Bilan :</h2>
+                    
+                    <div>
+                        <p>Compétence acquise :</p>
+
+                        <ul class="ul_bilan">
+                            <li>Apprendre à faire un cachier des charges</li>
+                            <li>Être plus à l'aise avec le html/css</li>
+                            <li>Apprendre un peu de JS (sauf animation car non réalisées)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../../../JS/interaction.js"></script>
+    </body>
+    <footer>
+        <div class="f">
+            <div id="f_left">
+                <h1 id="pfootertitre">Me contacter :</h1></li>
+                <p id="pfooter">Email: <a class="a1" id="a_h" href="mailto:nolhan.gf42@gmail.com">nolhan.gf42@gmail.com</a></p>
+                <p id="pfooter">Téléphone : 06 27 24 78 41</p>
+            </div>
+            <div id="f_right">
+                <h1 id="pfootertitre2">Lien :</h1>
+                <p id="pfooter">Linkedin : <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+                <script type="IN/Share" data-url="https://www.linkedin.com/in/nolhan-gachon-flores-6968bb28b/"></script></p>
+            </div>
+        </div>
+    </footer>
+</html>

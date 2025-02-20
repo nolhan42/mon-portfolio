@@ -1,0 +1,159 @@
+/*------------------Veille Technologique------------------*/
+#title {
+    margin-top: 70px;
+    text-align: center;
+    height: 300px;
+    background-image: url('../Image/Reseau_communication.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title2 {
+    opacity: 0.75;
+    background-color: rgb(144, 144, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.veille{
+    background-color: rgb(162, 162, 238);
+    border-radius: 10px;
+}
+
+#article1, #article2{
+    background-color: rgb(94, 133, 179);
+    width: 47.5%;
+    margin-left: 1.25%;
+    border-radius: 10px;
+}
+
+.article{
+    margin-bottom: 70px;
+}
+
+.article_conteneur {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de revenir à la ligne */
+    gap: 20px;
+}
+
+#article{
+    background-color: rgb(94, 133, 179);
+    width: 47.5%;
+    margin-left: 1.25%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/*------------------END DIV------------------*/
+
+#img1_article {
+    height: auto;
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 6% 0% 0% 5%;
+}
+
+/*------------------Mise en page------------------*/
+#veille_imagepres{
+    width: 47.5%;
+    margin: 0% 0% 0% 1.25%;
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+}
+
+#veille_pres{
+    width: 47.5%;
+    margin-left: 1.25%;
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+}
+
+/*------------------<a>------------------*/
+#source_article:hover{
+    color: blue;
+}
+
+/*------------------Paragraphe------------------*/
+#p_veille{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin: 10px;
+    line-height: 1.5; /* Améliore l'espacement entre les lignes*/
+    font-size: 25px;
+}
+
+#theme{
+    font-size: 30px;
+    padding: 15px;
+}
+
+#p_veilletexte{
+    font-size: clamp(15px, 1.25vw, 35px);
+}
+
+#p_textearticle {
+    margin: 10% 0% 1% 1%;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+#source_article {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: block;
+    margin-top: 10px;
+}
+
+#Date {
+    display: inline-block;
+}
+
+/*------------------h{x}------------------*/
+#h2_veille{
+    font-size: 30px;
+}
+
+#h1_ttlarticle{
+    text-align: center;
+}
+
+#h2_article{
+    position: absolute;
+    width: 45%;
+    margin-left: 0.5%;
+    text-align: left;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #article{
+        width: 100%;
+    }
+
+    #h2_article{
+        font-size: 20px;
+        position: relative;
+        width: 100%;
+    }
+
+    #p_textearticle, #Date, #source_article{
+        font-size: 15px;
+    }
+}

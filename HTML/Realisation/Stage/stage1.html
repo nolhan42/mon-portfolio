@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Stage1</title>
+        <meta http-equiv="refresh" content="300">
+        <link rel="stylesheet" href="../../../CSS/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../../../CSS/realisationstyle.css" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="rea">
+        
+        <!-- Barre de navigation en haut -->
+        <header id="header">
+            <nav id="nav">
+                <ul>
+                    <li class="nav_li"><a class="rea" id="a_h" href="../../realisation.html">Go back</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="title">
+            <h1 id="title_realisations">Stage 1ère Année : Chez Micro D'Clic</h1>
+        </div>
+
+        <div class="stage1">
+            <!--Intro-->
+            <div class="div_rea">
+                <div id="rea_intro">
+                    <h2>Présentation de l'entreprise</h2>
+
+                    <p id="p_reatexte">Micro d'clic est un magasin d'informatique situé à Condrieu, au 8 Rue de l'Industrie, Espace Les Chaillées. Fondée en mai 2009, c'est une société qui propose une gamme complète de services informatiques destinés aux particuliers, professionnels, associations et collectivités. </p>
+                    <img class="hidden" id="img_hidden" src="../../../Image/img_stage.png"/>
+                </div>
+
+                <div id="stage_imageintro">
+                    <img id="img_Nohidden_x" src="../../../Image/img_stage.png" onclick="openImage('../../../Image/img_stage.png')"/>
+                </div>
+            </div>
+        
+            <!--Développement-->
+            <div class="div_rea_x">
+                <div id="rea_intro_x">
+                    <h2>Développement :</h2>
+                    
+                    <div>
+                        <p class="p_lefttexte">Travaux Réalisé :</p>
+                        <br>
+                        <ul class="ul_tr">
+                            <li>Nettoyage de poste informatique</li>
+                            <li>Mise à jour de version/Windows</li>
+                            <li>Remplacement de disqur dur (hdd à ssd)</li>
+                            <li>Remplacement de barette de ram</li>
+                        </ul>
+                    </div>
+                    <br>
+                </div>
+
+                <!--Choix Mission-->
+                <button id="left_arrow_s" class="arrow" onclick="switchmission1(-1)"></button> <!-- Flèche gauche -->
+
+                <div class="arrow_responsive"><!-- Pour le responsive -->
+                    <div id="column_arrow">
+                        <button class="hidden" id="left_arrow_x" onclick="switchmission1(1)"></button>
+                        <button class="hidden" id="right_arrow_x" onclick="switchmission1(1)"></button>
+                    </div>
+                </div>
+
+                <div id="rea_dvp_x">
+                    <!--Mission1-->
+                    <div class="hidden" id="s1_Mission1">
+                        <img class="img_s_r" src="../../../Image/barrette-ram.png"/>
+                        <p class="p_mtexte">Mission 1: Changer les barrettes RAM d'une tour</p>
+
+                        <p id="p_stagetexte">Après demande d'un client pour améliorer les capacités de son ordinateur. Il a fallu changer les barrettes de RAM (la capacité de celle-ci)</p>
+                        <p id="p_stagetexte">J'ai donc pris la tour, pour la poser sur le bureau et l'ouvrir.</p>
+                        <p id="p_stagetexte">J'ai pris un tournevis afin de dévissé les barrettes.</p>
+                        <p id="p_stagetexte">Je les ai ensuites délicatement enlevés afin d'insérer les nouvelles à la place.</p>
+                        <p id="p_stagetexte">Enfin, j'ai révisé les barrettes, refermé la tour, et l'ai reposée par terre.</p>
+                    </div>
+                    <!--Mission2-->
+                    <div class="hidden" id="s1_Mission2">
+                        <img class="img_s_r" src="../../../Image/disque-dur.png"/>
+                        <p class="p_mttexte">Mission 2: Changer un disque dur et transfer des données</p>
+
+                        <p id="p_stagetexte">Après examination du problème de lenteur venant d'un ordinateur portable d'un client, Il y a eu décision de changer le disque dur.</p>
+                        <p id="p_stagetexte">En premier temps, on à retirer l'ancien disque dur. Une fois retirer, il y a eu un (long) processus d'attente pour la copie des donné d'un disque à l'autre(1h30-2h)</p>
+                        <p id="p_stagetexte">Après la copie, on récupère le nouveau disque, on le branche dans l'ordinateur, on vérifie que tout fonctionne, et seulement à la fin on referme tout.</p>
+                        <br>
+                        <p id="p_stagetexte">Tâche réalisé avec l'aide des dirigeants du magasin</p>
+                    </div>
+                    <!--Mission3-->
+                    <div class="hidden" id="s1_Mission3">
+                        <p class="p_mtexte"><bold>Mission 3: Nettoyer/Mettre à jour/Installer windows sur des ordinateurs</p>
+
+                        <p id="p_stagetexte">Pour des changement de windows ou des nouveaux ordinateurs, ont prenait une clé et ont installais souvent w10 ou w11.</p>
+                        <p id="p_stagetexte">Pour des ordinateur lent, on se servait du logiciel "SDIO" ou Snappy Driver Installer Origin, afin de mettre à jour différents drivers</p>
+                        <img class="img_s_r" src="../../../Image/sdio.jpg"/>
+                        <p id="p_stagetexte">Une fois les drivers à jours, une clé usb contenant plusieurs logiciel de nettoyage était utilisé.</p>
+                        <p id="p_stagetexte">Enfin, une fois tout cela réalisé, une dernière vérification était faite avant de rendre/donner l'ordinateur au client.</p>
+                        <br>
+                        <p id="p_stagetexte">Tâche réalisé avec l'aide des dirigeants du magasin</p>
+                    </div>
+                </div>
+
+                <button id="right_arrow_s" class="arrow" onclick="switchmission1(1)"></button> <!-- Flèche droite -->
+            </div>
+
+            <!--Bilan-->
+            <div class="div_rea">
+                <div id="stage_bilan">
+                    <h2>Bilan :</h2>
+                    
+                    <div>
+                        <p>Compétence acquise :</p>
+
+                        <ul class="ul_bilan">
+                            <li>Apprendre à réparer ou changer différent composant informatique</li>
+                            <li>Savoir nettoyer correctement du matériel informatique</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Affichage Image preview-->
+            <div id="imageAffichage" class="affichage" onclick="closeImage()">
+                <span class="close">&times;</span>
+                <img class="affichage-content" id="affichageImage">
+            </div>
+            </div>
+        </div>
+        
+        <script src="../../../JS/interaction.js"></script>
+    </body>
+    <footer>
+        <div class="f">
+            <div id="f_left">
+                <h1 id="pfootertitre">Me contacter :</h1></li>
+                <p id="pfooter">Email: <a class="a1" id="a_h" href="mailto:nolhan.gf42@gmail.com">nolhan.gf42@gmail.com</a></p>
+                <p id="pfooter">Téléphone : 06 27 24 78 41</p>
+            </div>
+            <div id="f_right">
+                <h1 id="pfootertitre2">Lien :</h1>
+                <p id="pfooter">Linkedin : <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+                <script type="IN/Share" data-url="https://www.linkedin.com/in/nolhan-gachon-flores-6968bb28b/"></script></p>
+            </div>
+        </div>
+    </footer>
+</html>

@@ -1,0 +1,41 @@
+
+.contact{
+    margin: 20% 0 0 25%;
+    background-color: gray;
+    border-radius: 10px;
+    width: 50%;
+}
+
+#contact_txt{
+    margin: 10px 0 0 10%;
+    text-align: left;
+    display: inline;
+}
+
+#lien_contact{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#h2_contact{
+    margin-top: 1.5%;
+}
+
+@media screen and (max-width: 1024px){
+    .contact{
+        margin: 25% 0 0 5%;
+        width: 90%;
+    }
+
+    #contact_txt{
+        margin-left: 5%;
+    }
+
+    @media screen and (max-width: 757px){
+        #contact_txt{
+            margin-left: 0;
+            display: block;
+            font-size: 18px;
+        }
+    }
+}
