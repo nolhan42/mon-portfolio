@@ -82,7 +82,16 @@
 }
 
 /*------------------<a>------------------*/
-#source_article:hover{
+#source_article {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: block;
+    margin-top: 10px;
+    width: fit-content; /*Il prend la largeur du texte*/
+}
+
+#source_article:hover {
     color: blue;
 }
 
@@ -111,14 +120,6 @@
     display: inline-block;
     vertical-align: top;
     text-align: left;
-}
-
-#source_article {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    display: block;
-    margin-top: 10px;
 }
 
 #Date {
