@@ -24,15 +24,25 @@
         </header>
 
         <div class="contact">
-            <h2 id="h2_contact">Contact</h2>
-            <p id="contact_txt">Adresse mail : <a class="a1" id="a_h" href="mailto:nolhan.gf42@gmail.com">nolhan.gf42@gmail.com</a>
-            <p id="contact_txt">Téléphone : 06 27 24 78 41</p></p>
+            <h2>Formulaire</h2>
+            <form id="my-form" action="https://formspree.io/f/xrbejrkq" method="POST">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
 
-            <h2 id="h2_contact">Profil</h2>
-            <p id="lien_contact">Linkedin : <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-            <script type="IN/Share" data-url="https://www.linkedin.com/in/nolhan-gachon-flores-6968bb28b/"></script></p>
+                <label>Email:</label>
+                <input type="email" name="email" required/>
+
+                <label>Message:</label>
+                <input id="message" type="text" name="message" required/>
+
+
+                <button id="submit">Submit</button>
+            </form>
+            <br>
+            <p id="my-form-status"></p>
         </div>
 
+        <script src="../JS/formulaire.js"></script>
         <script src="../JS/interaction.js"></script>
     </body>
 </html>
