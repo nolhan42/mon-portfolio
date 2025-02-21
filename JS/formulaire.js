@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function(){
-    document.getElementById("my-form").addEventListener("submit", function(event){
+    document.getElementById("formulaire").addEventListener("submit", function(event){
         event.preventDefault();
 
         let formulaireData = new FormData(this);
-        let formulaireStatus = document.getElementById("my-form-status");
+        let formulaireStatus = document.getElementById("formulaire-status");
 
         fetch(this.action, {
             method: "POST",
             body: formulaireData,
-            header: {"Accept": "application/json"}
+            header: {'Accept': 'application/json'}
         })
         .then(response => {
             if(response.ok){
