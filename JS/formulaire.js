@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function(){
             }
         })
         .catch(error =>{
-            formulaireStatus.textContent = "Merci pour l'envoie !";/*temporaire*/
+            formulaireStatus.textContent = "Une erreur à été détecter, veuillez réessayé";
             formulaireStatus.style.color = "red";
         });
     });
